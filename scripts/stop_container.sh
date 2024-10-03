@@ -5,3 +5,4 @@ set -e
 containerid= sudo docker container ls  | grep 'devayanthakur/simple-python-flask-ap' | awk '{print $1}'
 echo "containerid : $containerid"
 sudo docker rm -f $containerid
+
